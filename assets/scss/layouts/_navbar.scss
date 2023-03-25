@@ -1,12 +1,45 @@
 .header {
     padding: 20px 10px;
 
+    @media(max-width: 767px) {
+        padding: 10px;
+    }
+
     h1 {
         font-weight: 300;
         font-size: 30px;
 
         @media(max-width: 767px) {
-            font-size: 25px;
+            font-size: 20px;
         }
     }
+
+    .navbar-brand {
+        @media(max-width: 767px) {
+            max-width: 280px;
+        }
+    }
+
+    .navbar {
+        padding: 0;
+
+        .navbar-nav {
+
+            .nav-link {
+                color: $color-secondary;
+                font-size: 18px;
+
+                &:hover {
+                    color: $color-primary;
+                    font-weight: 600;
+                }
+
+                &.active {
+                    color: $color-primary;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
 }

@@ -22,9 +22,31 @@
   <div class="container border p-0">
     <!-- header -->
     <header class="header">
-      <a href="/">
-        <img src="assets/images/oed_logo.png" alt="header brand image" class="img-fluid">
-      </a>
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/oed_logo.png" alt="header brand image" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <ul class="navbar-nav ms-auto mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hire Us</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <h1>Services :Öltankentsorgung zum Festpreis </h1>
     </header>
 
@@ -42,7 +64,7 @@
         </div>
       </div>
 
-      <div class="banner-main">
+      <!-- <div class="banner-main">
         <div class="row g-0" style="height: 350px;">
           <div class="col-md-4 h-100 text-center position-relative" style="background: #E4EDE3;">
             <img src="assets/images/banner-1-small.png" alt="plumber" class="img-fluid h-100">
@@ -68,6 +90,47 @@
             </div>
           </div>
         </div>
+      </div> -->
+
+      <div class="image-carousel position-relative">
+
+        <div class="mySlides position-relative">
+          <img src="assets/images/img_snowtops.jpg" style="width:100%">
+          <div class="text-content">
+            <p>French Alps</p>
+          </div>
+        </div>
+
+        <div class="mySlides position-relative">
+          <img src="assets/images/img_lights.jpg" style="width:100%">
+          <div class="text-content">
+            <p>Northern Lights</p>
+          </div>
+        </div>
+
+        <div class="mySlides position-relative">
+          <img src="assets/images/img_mountains.jpg" style="width:100%">
+          <div class="text-content">
+            <p>Beautiful Mountains</p>
+          </div>
+        </div>
+
+        <div class="mySlides position-relative">
+          <img src="assets/images/img_forest.jpg" style="width:100%">
+          <div class="text-content">
+            <p>The Rain Forest</p>
+          </div>
+        </div>
+
+        <div class="mySlides position-relative">
+          <img src="assets/images/img_mountains.jpg" style="width:100%">
+          <div class="text-content">
+            <p>Mountains!</p>
+          </div>
+        </div>
+
+        <button class="button-left btn button-nav" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="button-right btn button-nav" onclick="plusDivs(1)">&#10095;</button>
       </div>
 
       <div class="banner-footer">
@@ -1085,6 +1148,25 @@
   <!-- all scripts are starts from here -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="assets/js/custom.js"></script>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = x.length }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+    }
+  </script>
   <!-- .........script ended............. -->
 </body>
 
