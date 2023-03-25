@@ -1,0 +1,337 @@
+/*=== abstracts css start === */
+/*===// end of abstracts css === */
+/*=== base css start === */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+address,
+strong,
+i {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 25px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #379429;
+  border-radius: 25px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #8c8c8c;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1080px;
+  }
+}
+
+@media (min-width: 768px) {
+  .w-md-50 {
+    width: 50%;
+  }
+}
+/*===// end of base css === */
+/*=== layouts css start === */
+.header {
+  padding: 20px 10px;
+}
+.header h1 {
+  font-weight: 300;
+  font-size: 30px;
+}
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 25px;
+  }
+}
+
+.footer {
+  padding-inline: 20px;
+}
+.footer a {
+  font-weight: 600;
+  font-size: 15px;
+  color: black;
+  transition: all 0.2s;
+}
+.footer a:hover {
+  color: #85d386;
+}
+
+/*===// end of layouts css === */
+/*=== components css start === */
+.banner-link-button {
+  background: #379429;
+  color: #fff;
+  border: 1px solid #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding-inline: 35px;
+  box-shadow: 1px 2px 3px #666;
+}
+.banner-link-button i {
+  font-size: 25px;
+}
+.banner-link-button:hover {
+  background: #68ce58;
+  color: #fff;
+}
+
+.submit-button {
+  background: #379429;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  padding-inline: 35px;
+  box-shadow: 1px 2px 3px #666;
+}
+.submit-button i {
+  font-size: 25px;
+}
+.submit-button:hover {
+  background: #68ce58;
+  color: #fff;
+}
+
+.banner .banner-top {
+  padding: 2px 0;
+  background: #8c8c8c;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.banner .banner-top .contacts {
+  color: #FCFCFC;
+  font-size: 22px;
+  font-weight: 400;
+}
+.banner .banner-footer {
+  padding: 10px 20px 20px;
+}
+.banner .banner-footer p {
+  font-weight: 400;
+  font-size: 15px;
+}
+.banner .banner-footer h2 {
+  font-size: 30px;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .banner .banner-footer h2 {
+    font-size: 26px;
+  }
+}
+
+.price-list .p-header {
+  padding-inline: 20px;
+}
+.price-list .p-header p {
+  padding: 0px 20px 20px;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .price-list .p-header p {
+    padding: 0px 10px 20px;
+    font-size: 15px;
+  }
+}
+.price-list .price-charts {
+  padding-inline: 20px;
+  padding-bottom: 20px;
+}
+.price-list .price-charts .price-card {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #c6c6c6;
+  height: 100%;
+}
+.price-list .price-charts .price-card h3 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding-block: 12px;
+}
+.price-list .price-charts .price-card .s-para {
+  font-weight: 300;
+  font-size: 14px;
+  padding-block: 12px;
+}
+.price-list .price-charts .price-card .t-head {
+  font-weight: 600;
+  font-size: 15px;
+}
+.price-list .price-charts .price-card .t-text {
+  font-weight: 400;
+  font-size: 15px;
+  padding-block: 3px;
+}
+.price-list .price-charts .price-card .bottom-text {
+  padding-block: 10px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.price-list .price-charts .price-card .list-ul li {
+  list-style-image: url(./../images/list.png);
+  padding-bottom: 10px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.price-list .service-area {
+  border-radius: 10px;
+  padding: 10px;
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+.price-list .service-area h3 {
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+  padding-block: 12px;
+}
+.price-list .service-area .areas {
+  padding-bottom: 10px;
+  height: 150px;
+  overflow-y: scroll;
+}
+.price-list .service-area .areas p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.price-list .service-area ::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 25px;
+}
+.price-list .service-area ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.price-list .service-area ::-webkit-scrollbar-thumb {
+  background: #379429;
+  border-radius: 25px;
+}
+.price-list .service-area ::-webkit-scrollbar-thumb:hover {
+  background: #8c8c8c;
+}
+
+.oil-tank-disposal {
+  padding-inline: 20px;
+}
+.oil-tank-disposal .section-h-d {
+  padding: 20px;
+  border-radius: 10px;
+}
+.oil-tank-disposal .section-h-d .min-content {
+  border-left: 1px dashed #000;
+  padding-left: 5px;
+}
+.oil-tank-disposal .section-h-d h6 {
+  font-weight: 600;
+  font-size: 16px;
+  padding-bottom: 5px;
+}
+.oil-tank-disposal .section-h-d ul li {
+  list-style: disc;
+  padding-bottom: 5px;
+}
+.oil-tank-disposal .section-h-d .linko {
+  color: #0fa0ce;
+  font-size: 15px;
+  display: inline-block;
+  border-bottom: 1px solid #0fa0ce;
+}
+
+.contact-section {
+  padding-inline: 20px;
+}
+.contact-section .con-top {
+  background: #f2f2f2;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.contact-section .con-top h5 {
+  font-weight: 600;
+  font-size: 15px;
+}
+.contact-section .con-top p {
+  font-weight: 400;
+  font-size: 15px;
+}
+.contact-section .con-main {
+  background: #f2f2f2;
+  padding: 15px 20px;
+  border-radius: 10px;
+}
+.contact-section .con-main .file-input {
+  margin-bottom: 10px;
+}
+@media (min-width: 992px) {
+  .contact-section .con-main .file-input {
+    width: 50%;
+  }
+}
+.contact-section .con-main label {
+  font-weight: 600;
+  font-size: 15px;
+}
+.contact-section .con-main .radio-selects {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+@media (max-width: 767px) {
+  .contact-section .con-main .radio-selects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 991px) {
+  .contact-section .con-main .radio-selects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/*===// end of components css === *//*# sourceMappingURL=style.css.map */

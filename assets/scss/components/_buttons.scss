@@ -1,0 +1,36 @@
+.banner-link-button {
+    background: $color-primary;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding-inline: 35px;
+    box-shadow: 1px 2px 3px #666;
+
+    i {
+        font-size: 25px;
+    }
+
+    &:hover {
+        background: #68ce58;
+        color: #fff;
+    }
+}
+
+.submit-button {
+    background: $color-primary;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    padding-inline: 35px;
+    box-shadow: 1px 2px 3px #666;
+
+    i {
+        font-size: 25px;
+    }
+
+    &:hover {
+        background: #68ce58;
+        color: #fff;
+    }
+}

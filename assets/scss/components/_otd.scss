@@ -1,0 +1,33 @@
+.oil-tank-disposal {
+    padding-inline: 20px;
+
+    .section-h-d {
+        padding: 20px;
+        border-radius: 10px;
+
+        .min-content {
+            border-left: 1px dashed #000;
+            padding-left: 5px;
+        }
+
+        h6 {
+            font-weight: 600;
+            font-size: 16px;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            li {
+                list-style: disc;
+                padding-bottom: 5px;
+            }
+        }
+
+        .linko {
+            color: #0fa0ce;
+            font-size: 15px;
+            display: inline-block;
+            border-bottom: 1px solid #0fa0ce;
+        }
+    }
+}

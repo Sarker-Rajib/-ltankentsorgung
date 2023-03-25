@@ -1,0 +1,112 @@
+.price-list {
+    .p-header {
+        padding-inline: 20px;
+
+        p {
+            padding: 0px 20px 20px;
+            font-weight: 400;
+            font-size: 18px;
+
+            @media(max-width: 767px) {
+                padding: 0px 10px 20px;
+                font-size: 15px;
+            }
+        }
+    }
+
+    .price-charts {
+        padding-inline: 20px;
+        padding-bottom: 20px;
+
+        .price-card {
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #c6c6c6;
+            height: 100%;
+
+            h3 {
+                font-weight: 600;
+                font-size: 20px;
+                text-align: center;
+                padding-block: 12px;
+            }
+
+            .s-para {
+                font-weight: 300;
+                font-size: 14px;
+                padding-block: 12px;
+            }
+
+            .t-head {
+                font-weight: 600;
+                font-size: 15px;
+            }
+
+            .t-text {
+                font-weight: 400;
+                font-size: 15px;
+                padding-block: 3px;
+            }
+
+            .bottom-text {
+                padding-block: 10px;
+                font-weight: 400;
+                font-size: 15px;
+            }
+
+            .list-ul {
+
+                li {
+                    list-style-image: url(./../images/list.png);
+                    padding-bottom: 10px;
+                    font-weight: 400;
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+
+    .service-area {
+        border-radius: 10px;
+        padding: 10px;
+
+        h3 {
+            font-weight: 600;
+            font-size: 20px;
+            text-align: center;
+            padding-block: 12px;
+        }
+
+        .areas {
+            padding-bottom: 10px;
+            height: 150px;
+            overflow-y: scroll;
+
+            p {
+                font-size: 14px;
+                font-weight: 400;
+            }
+        }
+
+        ::-webkit-scrollbar {
+            width: 5px;
+            border-radius: 25px;
+        }
+
+        /* Track */
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+            background: $color-primary;
+            border-radius: 25px;
+        }
+
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+            background: $color-secondary;
+        }
+    }
+}
