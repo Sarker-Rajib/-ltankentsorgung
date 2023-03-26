@@ -167,11 +167,14 @@ body {
 .button-nav {
   background: #000;
   color: #fff;
+  border: none;
+  border-radius: 5px;
   display: inline-block;
   padding: 5px 12px;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  transition: all 0.2s linear;
 }
 .button-nav.button-left {
   left: 10px;
@@ -179,7 +182,14 @@ body {
 .button-nav.button-right {
   right: 10px;
 }
+.button-nav:hover {
+  background: #68ce58;
+  color: #fff;
+}
 
+.banner {
+  padding-bottom: 10px;
+}
 .banner .banner-top {
   padding: 2px 0;
   background: #8c8c8c;
@@ -192,7 +202,7 @@ body {
   font-weight: 400;
 }
 .banner .banner-footer {
-  padding: 10px 20px 20px;
+  padding: 10px 20px 0px;
 }
 .banner .banner-footer p {
   font-weight: 400;
@@ -207,6 +217,19 @@ body {
     font-size: 26px;
   }
 }
+.banner .banner-footer .p-header {
+  padding: 20px;
+}
+.banner .banner-footer .p-header p {
+  font-weight: 400;
+  font-size: 18px;
+}
+@media (max-width: 767px) {
+  .banner .banner-footer .p-header p {
+    padding: 0px 10px 20px;
+    font-size: 15px;
+  }
+}
 
 .image-carousel .text-content {
   position: absolute;
@@ -214,6 +237,7 @@ body {
   bottom: 30px;
   background: #000;
   padding: 10px 20px;
+  border: 1px solid #8c8c8c;
   border-radius: 10px;
 }
 .image-carousel .text-content p {
@@ -221,56 +245,125 @@ body {
   font-weight: 600;
 }
 
-.price-list .p-header {
-  padding-inline: 20px;
+.time-commu {
+  padding: 20px;
+  background: #ededed;
 }
-.price-list .p-header p {
-  padding: 0px 20px 20px;
-  font-weight: 400;
-  font-size: 18px;
+.time-commu h3,
+.time-commu a {
+  display: block;
+  font-weight: 300;
+  font-size: 25px;
+  color: #000;
+  text-align: center;
+}
+.time-commu h3 i,
+.time-commu a i {
+  color: #379429;
+  font-size: 35px;
+  vertical-align: middle;
 }
 @media (max-width: 767px) {
-  .price-list .p-header p {
-    padding: 0px 10px 20px;
-    font-size: 15px;
+  .time-commu h3,
+  .time-commu a {
+    font-size: 18px;
   }
+  .time-commu h3 i,
+  .time-commu a i {
+    font-size: 22px;
+  }
+}
+
+.festperis {
+  padding: 20px 35px;
+  background: #ededed;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .festperis .middle {
+    padding: 10px 0;
+  }
+}
+.festperis h3 {
+  font-weight: 500;
+  font-size: 25px;
+  color: #379429;
+}
+@media (max-width: 767px) {
+  .festperis h3 {
+    font-size: 22px;
+  }
+}
+
+.anfrage {
+  padding: 20px 35px;
+}
+@media (max-width: 767px) {
+  .anfrage {
+    text-align: center;
+  }
+  .anfrage h4 {
+    font-size: 22px;
+  }
+}
+.anfrage h4 {
+  font-weight: 500;
+  font-size: 25px;
+}
+.anfrage .icon {
+  width: 40px;
+  margin-right: 10px;
+}
+.anfrage .icon i {
+  color: #379429;
+  font-size: 40px;
+}
+
+.price-list {
+  padding-top: 30px;
 }
 .price-list .price-charts {
   padding-inline: 20px;
   padding-bottom: 20px;
 }
-.price-list .price-charts .price-card {
-  padding: 10px;
-  border-radius: 10px;
+.price-list .price-charts .card-wrapper {
   border: 1px solid #c6c6c6;
   height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
 }
-.price-list .price-charts .price-card h3 {
+.price-list .price-charts .card-wrapper h3 {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
   padding-block: 12px;
+  background: #86b817;
+  color: #ffffff;
 }
-.price-list .price-charts .price-card .s-para {
+.price-list .price-charts .card-wrapper .price-card {
+  height: 100%;
+  padding: 0px 10px 10px;
+}
+.price-list .price-charts .card-wrapper .price-card .s-para {
   font-weight: 300;
   font-size: 14px;
   padding-block: 12px;
 }
-.price-list .price-charts .price-card .t-head {
+.price-list .price-charts .card-wrapper .price-card .t-head {
   font-weight: 600;
   font-size: 15px;
 }
-.price-list .price-charts .price-card .t-text {
+.price-list .price-charts .card-wrapper .price-card .t-text {
   font-weight: 400;
   font-size: 15px;
   padding-block: 3px;
 }
-.price-list .price-charts .price-card .bottom-text {
+.price-list .price-charts .card-wrapper .price-card .bottom-text {
   padding-block: 10px;
   font-weight: 400;
   font-size: 15px;
 }
-.price-list .price-charts .price-card .list-ul li {
+.price-list .price-charts .card-wrapper .price-card .list-ul li {
   list-style-image: url(./../images/list.png);
   padding-bottom: 10px;
   font-weight: 400;
