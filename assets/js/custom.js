@@ -28,6 +28,7 @@ addButton.addEventListener('click', () => {
 
     const child = document.createElement('input')
     child.type = 'file'
+    child.name = 'name1'
     child.classList.add('form-control')
     child.classList.add('file-input')
     filesParent.appendChild(child);

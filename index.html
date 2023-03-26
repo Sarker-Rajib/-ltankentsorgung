@@ -67,35 +67,35 @@
       <div class="image-carousel position-relative">
 
         <div class="mySlides position-relative">
-          <img src="assets/images/img_snowtops.jpg" style="width:100%">
+          <img src="assets/images/img_snowtops.jpg" style="width:100%" alt="ca-imag">
           <div class="text-content">
             <p>French Alps</p>
           </div>
         </div>
 
         <div class="mySlides position-relative">
-          <img src="assets/images/img_lights.jpg" style="width:100%">
+          <img src="assets/images/img_lights.jpg" style="width:100%" alt="ca-imag">
           <div class="text-content">
             <p>Northern Lights</p>
           </div>
         </div>
 
         <div class="mySlides position-relative">
-          <img src="assets/images/img_mountains.jpg" style="width:100%">
+          <img src="assets/images/img_mountains.jpg" style="width:100%" alt="ca-imag">
           <div class="text-content">
             <p>Beautiful Mountains</p>
           </div>
         </div>
 
         <div class="mySlides position-relative">
-          <img src="assets/images/img_forest.jpg" style="width:100%">
+          <img src="assets/images/img_forest.jpg" style="width:100%" alt="ca-imag">
           <div class="text-content">
             <p>The Rain Forest</p>
           </div>
         </div>
 
         <div class="mySlides position-relative">
-          <img src="assets/images/img_mountains.jpg" style="width:100%">
+          <img src="assets/images/img_mountains.jpg" style="width:100%" alt="ca-imag">
           <div class="text-content">
             <p>Mountains!</p>
           </div>
@@ -530,40 +530,41 @@
       <br>
 
       <div class="con-main">
-        <form>
+        <form action="https://getform.io/f/a3674f5e-f742-465b-9351-3fa0bc68a439" method="POST"
+          enctype="multipart/form-data">
           <div class="row">
             <div class="mb-3 col-md-6">
               <label for="name">Ihr Name</label>
-              <input id="name" type="text" class="form-control">
+              <input id="name" name="Name" type="text" class="form-control" required>
             </div>
             <div class="mb-3 col-md-6">
               <label for="str">Straße / Nr.</label>
-              <input id="str" type="text" class="form-control">
+              <input id="str" type="text" name="Street" class="form-control" required>
             </div>
             <div class="mb-3 col-md-6">
               <label for="plz">PLZ</label>
-              <input id="plz" type="text" class="form-control">
+              <input id="plz" type="text" name="PLZ" class="form-control" required>
             </div>
             <div class="mb-3 col-md-6">
               <label for="Ort">Ort</label>
-              <input id="Ort" type="text" class="form-control">
+              <input id="Ort" type="text" name="Ort" class="form-control" required>
             </div>
             <div class="mb-3 col-md-6">
               <label for="email">EMail</label>
-              <input id="email" type="email" class="form-control">
+              <input id="email" name="Email" type="email" class="form-control" required>
             </div>
             <div class="mb-3 col-md-6">
               <label for="fest">Festnetznummer</label>
-              <input id="fest" type="number" class="form-control">
+              <input id="fest" type="number" name="Festnetznummer" class="form-control" required>
             </div>
             <div class="mb-3 col-md-6">
               <label for="handy">Handynummer</label>
-              <input id="handy" type="number" class="form-control">
+              <input id="handy" type="number" name="Handynummer" class="form-control" required>
             </div>
             <div class="mb-3 col-md-6">
               <label for="op-select">
                 Sie wünschen einen Rückruf?</label>
-              <select id="op-select" class="form-control select-cotrol" name="rueckruftag">
+              <select id="op-select" name="Sie_wünschen_einen_Rückruf" class="form-control select-cotrol" required>
                 <option value="">
                   Please choose
                 </option>
@@ -590,13 +591,11 @@
                 </option>
               </select>
             </div>
-
-
           </div>
 
           <div class="radio-selects mb-3">
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+              <input class="form-check-input" type="radio" name="tankType" value="Kellertank" id="flexRadioDefault1">
               <label class="form-check-label" for="flexRadioDefault1">
                 Kellertank
               </label>
@@ -604,7 +603,7 @@
               <img src="assets/images/kellertank.png" alt="k" class="img-fluid">
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+              <input class="form-check-input" type="radio" name="tankType" value="Zylindertank" id="flexRadioDefault2">
               <label class="form-check-label" for="flexRadioDefault2">
                 Zylindertank
               </label>
@@ -612,7 +611,7 @@
               <img src="assets/images/zylindertank.png" alt="k" class="img-fluid">
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+              <input class="form-check-input" type="radio" name="tankType" value="Erdtank" id="flexRadioDefault3">
               <label class="form-check-label" for="flexRadioDefault3">
                 Erdtank
               </label>
@@ -620,7 +619,8 @@
               <img src="assets/images/erdtank.png" alt="k" class="img-fluid">
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+              <input class="form-check-input" type="radio" name="tankType" value="Batterietank (Stahl)"
+                id="flexRadioDefault4">
               <label class="form-check-label" for="flexRadioDefault4">
                 Batterietank (Stahl)
               </label>
@@ -628,7 +628,8 @@
               <img src="assets/images/batterietank-stahl.png" alt="k" class="img-fluid">
             </div>
             <div class="form-check">
-              <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault5">
+              <input class="form-check-input" type="radio" name="tankType" value="Batterietank (Kunststoff)"
+                id="flexRadioDefault5">
               <label class="form-check-label" for="flexRadioDefault5">
                 Batterietank (Kunststoff)
               </label>
@@ -640,43 +641,43 @@
           <div class="row">
             <div class="mb-3 col-md-6">
               <label for="infot">Informationen zum Tank</label>
-              <input id="infot" type="text" class="form-control">
+              <input id="infot" name="Informationen_zum_Tank" type="text" class="form-control" required>
             </div>
 
             <div class="mb-3 col-md-6">
               <label for="Anzahl">Anzahl der Tanks</label>
-              <input id="Anzahl" type="text" class="form-control">
+              <input id="Anzahl" name="Anzahl_der_Tanks" type="text" class="form-control" required>
             </div>
 
             <div class="mb-3 col-md-6">
               <label for="fug">Fassungsvermögen in Liter je Tank</label>
-              <input id="fug" type="text" class="form-control">
+              <input id="fug" type="text" name="Fassungsvermögen_je_Tank" class="form-control" required>
             </div>
 
             <div class="mb-3 col-md-6">
               <label for="res">Restbestand an Heizöl je Tank</label>
-              <input id="res" type="text" class="form-control">
+              <input id="res" type="text" name="Restbestand_an_Heizöl_je_Tank" class="form-control" required>
             </div>
 
             <div class="mb-3 col-12">
               <label for="sons">Sonstige Infos und Wünsche</label>
-              <input id="sons" type="text" class="form-control">
+              <input id="sons" name="Sonstige_Infos_und_Wünsche" type="text" class="form-control">
             </div>
 
             <div class="mb-3 col-12">
-              <label for="res">Adresse der Tankanlage, falls abweichend</label>
-              <input id="res" type="text" class="form-control">
+              <label for="address">Adresse der Tankanlage, falls abweichend</label>
+              <input id="address" type="text" name="Adresse_der_Tankanlage" class="form-control" required>
             </div>
 
             <div class="mb-3 col-12">
-              <label for="res">Terminwunsch</label>
-              <input id="res" type="text" class="form-control">
+              <label for="term">Terminwunsch</label>
+              <input id="term" name="Terminwunsch" type="text" class="form-control" required>
             </div>
 
             <div class="mb-3 col-12">
               <label>Ein Foto anhängen</label>
               <div id="fileHolder" class="pb-2 pb-md-3">
-                <input type="file" class="file-input form-control">
+                <input type="file" name="Ein_Foto_anhängen" class="file-input form-control">
               </div>
 
               <p style="cursor: pointer;" id="addMoreFile">Weiteres Bild <span
@@ -684,7 +685,7 @@
               </p>
             </div>
           </div>
-          <input class="submit-button btn mb-3" type="submit" name="sumbit" value="Anfrage senden">
+          <input class="submit-button btn mb-3" type="submit" value="Anfrage senden">
         </form>
       </div>
     </div>
