@@ -306,6 +306,12 @@ body {
     font-size: 22px;
   }
 }
+.anfrage a {
+  color: #000;
+}
+.anfrage a:hover {
+  color: #379429;
+}
 .anfrage h4 {
   font-weight: 500;
   font-size: 25px;
