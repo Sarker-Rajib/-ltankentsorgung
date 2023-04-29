@@ -24,6 +24,10 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+}
+
 ::after,
 ::before {
   box-sizing: border-box;
@@ -351,6 +355,9 @@ body {
 .service-list .wrapper .card-wrapper .price-card {
   height: 100%;
   padding: 0px 10px 10px;
+}
+.service-list .wrapper .card-wrapper .price-card .list-ul {
+  padding-left: 30px;
 }
 .service-list .wrapper .card-wrapper .price-card .list-ul li {
   list-style-image: url(./../images/list.webp);
