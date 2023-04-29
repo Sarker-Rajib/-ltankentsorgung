@@ -106,6 +106,7 @@ body {
 .header .navbar .navbar-nav .nav-link {
   color: #3aa13a;
   font-size: 18px;
+  margin-left: 10px;
 }
 .header .navbar .navbar-nav .nav-link:hover {
   color: #379429;
@@ -292,9 +293,6 @@ body {
   .anfrage {
     text-align: center;
   }
-  .anfrage h4 {
-    font-size: 22px;
-  }
 }
 .anfrage a {
   color: #000;
@@ -306,13 +304,19 @@ body {
   font-weight: 500;
   font-size: 25px;
 }
+@media (max-width: 991px) {
+  .anfrage h4 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  .anfrage h4 {
+    font-size: 22px;
+  }
+}
 .anfrage .icon {
   width: 40px;
   margin-right: 10px;
-}
-.anfrage .icon i {
-  color: #379429;
-  font-size: 40px;
 }
 
 .service-list {
@@ -341,7 +345,7 @@ body {
   padding: 0px 10px 10px;
 }
 .service-list .wrapper .card-wrapper .price-card .list-ul li {
-  list-style-image: url(./../images/list.png);
+  list-style-image: url(./../images/list.webp);
   padding-bottom: 10px;
   font-weight: 400;
   font-size: 15px;
