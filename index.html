@@ -9,6 +9,9 @@
   <title>Öltankentsorgung zum Festpreis</title>
   <link rel='shortcut icon' href='assets/images/list.png' type='image/x-icon'>
   <link rel="stylesheet" href="assets/css/bootstrap.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/vendor/Swiper-slider/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -21,8 +24,8 @@
         <a class="navbar-brand" href="#">
           <img src="assets/images/oed_logo.webp" alt="header brand image" class="img-fluid">
         </a>
-        <button class="navbar-toggler" id="nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-          aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" id="nav-button" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
@@ -398,7 +401,7 @@
           <div class="accordion accordion-flush" id="FAQaccordion">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed"  id="btnt1" type="button" data-bs-toggle="collapse"
+                <button class="accordion-button collapsed" id="btnt1" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                   1. Non consectetur a erat nam at lectus urna duis?
                 </button>
@@ -426,7 +429,7 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" >
+              <h2 class="accordion-header">
                 <button class="accordion-button collapsed" id="btnt3" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                   3. Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
@@ -442,7 +445,7 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" >
+              <h2 class="accordion-header">
                 <button class="accordion-button collapsed" id="btnt4" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
                   4. Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
@@ -458,7 +461,7 @@
               </div>
             </div>
             <div class="accordion-item">
-              <h2 class="accordion-header" >
+              <h2 class="accordion-header">
                 <button class="accordion-button collapsed" id="btnt5" type="button" data-bs-toggle="collapse"
                   data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
                   5. Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
@@ -526,7 +529,7 @@
 
   <!-- all scripts are starts from here -->
   <script src="assets/vendor/Swiper-slider/js/swiper-bundle.min.js"></script>
-  
+
   <script>
     var swiper = new Swiper(".imageSlider", {
       slidesPerView: 6,
@@ -561,14 +564,14 @@
   </script>
 
   <script>
-    document.getElementById('nav-button').addEventListener('click', ()=>{
+    document.getElementById('nav-button').addEventListener('click', () => {
       const nav = document.getElementById('navbarText');
       nav.classList.toggle('collapse');
     });
 
     const acc1 = document.getElementById('flush-collapseOne');
     const acc2 = document.getElementById('flush-collapseTwo');
-    const acc3= document.getElementById('flush-collapseThree');
+    const acc3 = document.getElementById('flush-collapseThree');
     const acc4 = document.getElementById('flush-collapseFour');
     const acc5 = document.getElementById('flush-collapseFive');
 
@@ -578,7 +581,7 @@
     const btn4 = document.getElementById('btnt4');
     const btn5 = document.getElementById('btnt5');
 
-    btn1.addEventListener('click', ()=> {
+    btn1.addEventListener('click', () => {
       btn1.classList.toggle('collapsed');
       btn2.classList.add('collapsed');
       btn3.classList.add('collapsed');
@@ -591,7 +594,7 @@
       acc5.classList.add('collapse');
     });
 
-    btn2.addEventListener('click', ()=> {
+    btn2.addEventListener('click', () => {
       btn1.classList.add('collapsed');
       btn2.classList.toggle('collapsed');
       btn3.classList.add('collapsed');
@@ -604,7 +607,7 @@
       acc5.classList.add('collapse');
     });
 
-    btn3.addEventListener('click', ()=> {
+    btn3.addEventListener('click', () => {
       btn1.classList.add('collapsed');
       btn2.classList.add('collapsed');
       btn3.classList.toggle('collapsed');
@@ -617,7 +620,7 @@
       acc5.classList.add('collapse');
     });
 
-    btn4.addEventListener('click', ()=> {
+    btn4.addEventListener('click', () => {
       btn1.classList.add('collapsed');
       btn2.classList.add('collapsed');
       btn3.classList.add('collapsed');
@@ -630,7 +633,7 @@
       acc5.classList.add('collapse');
     });
 
-    btn5.addEventListener('click', ()=> {
+    btn5.addEventListener('click', () => {
       btn1.classList.add('collapsed');
       btn2.classList.add('collapsed');
       btn3.classList.add('collapsed');
