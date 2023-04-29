@@ -51,4 +51,11 @@
     &.button-right {
         right: 10px;
     }
+
+    &:hover{
+        background: #6a5599;
+    }
+    &.active{
+        background: #6a5599;
+    }
 }
