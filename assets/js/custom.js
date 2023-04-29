@@ -1,17 +1,24 @@
-const miniTrigger = document.getElementById('mini-trigger');
-const expTrigger = document.getElementById('expp-trigger');
-const miniSection = document.getElementById('mini');
-const expandedSection = document.getElementById('expanded');
+// image slide
+var slideIndex = 1;
+showDivs(slideIndex);
 
-miniTrigger.addEventListener('click', () => {
-    miniSection.classList.add('d-none');
-    expandedSection.classList.remove('d-none');
-});
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
 
-expTrigger.addEventListener('click', () => {
-    miniSection.classList.remove('d-none');
-    expandedSection.classList.add('d-none');
-});
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) { slideIndex = 1 }
+    if (n < 1) { slideIndex = x.length }
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex - 1].style.display = "block";
+}
+
+// --
+
 
 // form file add
 const addButton = document.getElementById('addMoreFile');
