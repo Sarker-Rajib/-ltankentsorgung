@@ -88,11 +88,11 @@ body {
 }
 .header h1 {
   font-weight: 300;
-  font-size: 30px;
+  font-size: 20px;
 }
 @media (max-width: 767px) {
   .header h1 {
-    font-size: 20px;
+    font-size: 15px;
   }
 }
 @media (max-width: 767px) {
@@ -102,6 +102,22 @@ body {
 }
 .header .navbar {
   padding: 0;
+}
+@media (max-width: 991px) {
+  .header .navbar .navbar-collapse {
+    background: rgba(255, 255, 255, 0.7411764706);
+    -webkit-backdrop-filter: blur(20px);
+            backdrop-filter: blur(20px);
+    position: absolute;
+    top: calc(100% + 25px);
+    border: 1px solid #3aa13a;
+    width: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .header .navbar .navbar-nav {
+    padding: 20px 0;
+  }
 }
 .header .navbar .navbar-nav .nav-link {
   color: #3aa13a;
