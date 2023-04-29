@@ -435,6 +435,7 @@ body {
 .contact-section .con-main label {
   font-family: "Raleway-semiBold";
   font-size: 15px;
+  padding-bottom: 3px;
 }
 .contact-section .con-main .radio-selects {
   display: grid;
@@ -456,6 +457,7 @@ body {
 }
 .faq .top .heading {
   padding-top: 10px;
+  font-size: 30px;
   font-family: "Raleway-medium";
   padding-bottom: 15px;
 }
@@ -464,6 +466,7 @@ body {
 }
 .faq .top p {
   color: #6c757d;
+  font-size: 18px;
 }
 .faq .accordion .accordion-item {
   border-radius: 10px;
@@ -474,6 +477,7 @@ body {
   border: none;
 }
 .faq .accordion .accordion-item .accordion-header .accordion-button {
+  cursor: pointer;
   font-family: "Raleway-semiBold";
   font-size: 20px;
 }
@@ -493,6 +497,7 @@ body {
   color: #008372;
 }
 .faq .accordion .accordion-item .accordion-collapse .accordion-body p {
+  font-size: 18px;
   padding: 10px;
 }
 

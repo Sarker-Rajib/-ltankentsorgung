@@ -4,6 +4,7 @@
     .top {
         .heading {
             padding-top: 10px;
+            font-size: 30px;
             font-family: 'Raleway-medium';
             padding-bottom: 15px;
 
@@ -14,6 +15,7 @@
 
         p {
             color: #6c757d;
+            font-size: 18px;
         }
     }
 
@@ -29,6 +31,7 @@
             .accordion-header {
                 
                 .accordion-button {
+                    cursor: pointer;
                     font-family: 'Raleway-semiBold';
                     font-size: 20px;
 
@@ -54,6 +57,7 @@
             .accordion-collapse {
                 .accordion-body {
                     p {
+                        font-size: 18px;
                         padding: 10px;
                     }
                 }
