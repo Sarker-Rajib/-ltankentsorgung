@@ -448,12 +448,12 @@ body {
   padding: 20px;
 }
 .faq .top .heading {
+  padding-top: 10px;
   font-family: "Raleway-medium";
   padding-bottom: 15px;
 }
 .faq .top .heading span {
   font-family: "Raleway-semiBold";
-  font-weight: bold;
 }
 .faq .top p {
   color: #6c757d;
