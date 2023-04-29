@@ -32,6 +32,24 @@
                         font-size: 15px;
                     }
                 }
+
+                .Slider-Image{
+                    .swiper{
+
+                        .swiper-button-next,
+                        .swiper-button-prev{
+                            background: #5cad5c;
+                            border-radius: 5px;
+                            padding: 0 15px;
+
+                            &::after{
+                                font-size: 20px;
+                                font-weight: bold;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

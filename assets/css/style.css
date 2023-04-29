@@ -357,6 +357,18 @@ body {
   padding-bottom: 10px;
   font-size: 15px;
 }
+.service-list .wrapper .card-wrapper .price-card .Slider-Image .swiper .swiper-button-next,
+.service-list .wrapper .card-wrapper .price-card .Slider-Image .swiper .swiper-button-prev {
+  background: #5cad5c;
+  border-radius: 5px;
+  padding: 0 15px;
+}
+.service-list .wrapper .card-wrapper .price-card .Slider-Image .swiper .swiper-button-next::after,
+.service-list .wrapper .card-wrapper .price-card .Slider-Image .swiper .swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+}
 
 .oil-tank-disposal {
   padding-inline: 20px;
@@ -433,7 +445,48 @@ body {
 }
 
 .faq {
-  padding-inline: 20px;
+  padding: 20px;
+}
+.faq .top .heading {
+  font-family: "Raleway-medium";
+  padding-bottom: 15px;
+}
+.faq .top .heading span {
+  font-family: "Raleway-semiBold";
+  font-weight: bold;
+}
+.faq .top p {
+  color: #6c757d;
+}
+.faq .accordion .accordion-item {
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  box-shadow: 0px 5px 25px 0px rgba(0, 0, 0, 0.06);
+  background: #fff;
+  border: none;
+}
+.faq .accordion .accordion-item .accordion-header .accordion-button {
+  font-family: "Raleway-semiBold";
+  font-size: 20px;
+}
+@media (max-width: 767px) {
+  .faq .accordion .accordion-item .accordion-header .accordion-button {
+    font-size: 18px;
+  }
+}
+.faq .accordion .accordion-item .accordion-header .accordion-button:focus {
+  box-shadow: none;
+  background: #fff;
+  color: #078372;
+}
+.faq .accordion .accordion-item .accordion-header .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  background: #fff;
+  color: #008372;
+}
+.faq .accordion .accordion-item .accordion-collapse .accordion-body p {
+  padding: 10px;
 }
 
 /*===// end of components css === *//*# sourceMappingURL=style.css.map */
