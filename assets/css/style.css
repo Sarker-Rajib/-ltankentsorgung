@@ -104,7 +104,7 @@ body {
   padding: 0;
 }
 .header .navbar .navbar-nav .nav-link {
-  color: #8c8c8c;
+  color: #3aa13a;
   font-size: 18px;
 }
 .header .navbar .navbar-nav .nav-link:hover {
@@ -191,8 +191,8 @@ body {
   padding-bottom: 10px;
 }
 .banner .banner-top {
-  padding: 2px 0;
-  background: #8c8c8c;
+  padding: 5px 0;
+  background: #5cad5c;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
 }
@@ -257,20 +257,10 @@ body {
   color: #000;
   text-align: center;
 }
-.time-commu h3 i,
-.time-commu a i {
-  color: #379429;
-  font-size: 35px;
-  vertical-align: middle;
-}
 @media (max-width: 767px) {
   .time-commu h3,
   .time-commu a {
     font-size: 18px;
-  }
-  .time-commu h3 i,
-  .time-commu a i {
-    font-size: 22px;
   }
 }
 
@@ -325,91 +315,36 @@ body {
   font-size: 40px;
 }
 
-.price-list {
+.service-list {
   padding-top: 30px;
 }
-.price-list .price-charts {
+.service-list .wrapper {
   padding-inline: 20px;
   padding-bottom: 20px;
 }
-.price-list .price-charts .card-wrapper {
+.service-list .wrapper .card-wrapper {
   border: 1px solid #c6c6c6;
   height: 100%;
   border-radius: 10px;
   overflow: hidden;
 }
-.price-list .price-charts .card-wrapper h3 {
+.service-list .wrapper .card-wrapper h3 {
   font-weight: 600;
   font-size: 20px;
   text-align: center;
   padding-block: 12px;
-  background: #86b817;
+  background: #5cad5c;
   color: #ffffff;
 }
-.price-list .price-charts .card-wrapper .price-card {
+.service-list .wrapper .card-wrapper .price-card {
   height: 100%;
   padding: 0px 10px 10px;
 }
-.price-list .price-charts .card-wrapper .price-card .s-para {
-  font-weight: 300;
-  font-size: 14px;
-  padding-block: 12px;
-}
-.price-list .price-charts .card-wrapper .price-card .t-head {
-  font-weight: 600;
-  font-size: 15px;
-}
-.price-list .price-charts .card-wrapper .price-card .t-text {
-  font-weight: 400;
-  font-size: 15px;
-  padding-block: 3px;
-}
-.price-list .price-charts .card-wrapper .price-card .bottom-text {
-  padding-block: 10px;
-  font-weight: 400;
-  font-size: 15px;
-}
-.price-list .price-charts .card-wrapper .price-card .list-ul li {
+.service-list .wrapper .card-wrapper .price-card .list-ul li {
   list-style-image: url(./../images/list.png);
   padding-bottom: 10px;
   font-weight: 400;
   font-size: 15px;
-}
-.price-list .service-area {
-  border-radius: 10px;
-  padding: 10px;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
-}
-.price-list .service-area h3 {
-  font-weight: 600;
-  font-size: 20px;
-  text-align: center;
-  padding-block: 12px;
-}
-.price-list .service-area .areas {
-  padding-bottom: 10px;
-  height: 150px;
-  overflow-y: scroll;
-}
-.price-list .service-area .areas p {
-  font-size: 14px;
-  font-weight: 400;
-}
-.price-list .service-area ::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 25px;
-}
-.price-list .service-area ::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-.price-list .service-area ::-webkit-scrollbar-thumb {
-  background: #379429;
-  border-radius: 25px;
-}
-.price-list .service-area ::-webkit-scrollbar-thumb:hover {
-  background: #8c8c8c;
 }
 
 .oil-tank-disposal {
