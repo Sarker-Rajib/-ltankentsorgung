@@ -1,4 +1,20 @@
 /*=== abstracts css start === */ /* cyrillic-ext */
+@font-face {
+  font-family: "Raleway-light";
+  src: url(./../font/Raleway-Light.ttf);
+}
+@font-face {
+  font-family: "Raleway-regular";
+  src: url(./../font/Raleway-Regular.ttf);
+}
+@font-face {
+  font-family: "Raleway-medium";
+  src: url(./../font/Raleway-Medium.ttf);
+}
+@font-face {
+  font-family: "Raleway-semiBold";
+  src: url(./../font/Raleway-SemiBold.ttf);
+}
 /*===// end of abstracts css === */
 /*=== base css start === */
 * {
@@ -65,7 +81,7 @@ a:hover {
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway-regular";
   color: #000000;
 }
 
