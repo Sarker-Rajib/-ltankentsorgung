@@ -1,60 +1,66 @@
 .price-list {
-    padding-top: 30px;
+    .p-header {
+        padding-inline: 20px;
+
+        p {
+            padding: 0px 20px 20px;
+            font-weight: 400;
+            font-size: 18px;
+
+            @media(max-width: 767px) {
+                padding: 0px 10px 20px;
+                font-size: 15px;
+            }
+        }
+    }
 
     .price-charts {
         padding-inline: 20px;
         padding-bottom: 20px;
 
-        .card-wrapper {
+        .price-card {
+            padding: 10px;
+            border-radius: 10px;
             border: 1px solid #c6c6c6;
             height: 100%;
-            border-radius: 10px;
-            overflow: hidden;
 
             h3 {
                 font-weight: 600;
                 font-size: 20px;
                 text-align: center;
                 padding-block: 12px;
-                background: $color-tertiary;
-                color: #ffffff;
             }
 
-            .price-card {
-                height: 100%;
-                padding: 0px 10px 10px;
+            .s-para {
+                font-weight: 300;
+                font-size: 14px;
+                padding-block: 12px;
+            }
 
-                .s-para {
-                    font-weight: 300;
-                    font-size: 14px;
-                    padding-block: 12px;
-                }
+            .t-head {
+                font-weight: 600;
+                font-size: 15px;
+            }
 
-                .t-head {
-                    font-weight: 600;
-                    font-size: 15px;
-                }
+            .t-text {
+                font-weight: 400;
+                font-size: 15px;
+                padding-block: 3px;
+            }
 
-                .t-text {
+            .bottom-text {
+                padding-block: 10px;
+                font-weight: 400;
+                font-size: 15px;
+            }
+
+            .list-ul {
+
+                li {
+                    list-style-image: url(./../images/list.png);
+                    padding-bottom: 10px;
                     font-weight: 400;
                     font-size: 15px;
-                    padding-block: 3px;
-                }
-
-                .bottom-text {
-                    padding-block: 10px;
-                    font-weight: 400;
-                    font-size: 15px;
-                }
-
-                .list-ul {
-
-                    li {
-                        list-style-image: url(./../images/list.png);
-                        padding-bottom: 10px;
-                        font-weight: 400;
-                        font-size: 15px;
-                    }
                 }
             }
         }
