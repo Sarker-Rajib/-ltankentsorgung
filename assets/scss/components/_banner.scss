@@ -10,7 +10,6 @@
         .contacts {
             color: #FCFCFC;
             font-size: 22px;
-            font-weight: 400;
         }
     }
 
@@ -18,13 +17,12 @@
         padding: 10px 20px 0px;
 
         p {
-            font-weight: 400;
             font-size: 15px;
         }
 
         h2 {
             font-size: 30px;
-            font-weight: 300;
+            font-family: 'Raleway-light';
 
             @media(max-width: 767px) {
                 font-size: 26px;
@@ -35,7 +33,6 @@
             padding: 20px;
 
             p {
-                font-weight: 400;
                 font-size: 18px;
 
                 @media(max-width: 767px) {
