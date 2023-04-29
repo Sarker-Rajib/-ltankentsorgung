@@ -1,6 +1,4 @@
 .banner {
-    padding-bottom: 10px;
-
     .banner-top {
         padding: 2px 0;
         background: $color-secondary;
@@ -15,7 +13,7 @@
     }
 
     .banner-footer {
-        padding: 10px 20px 0px;
+        padding: 10px 20px 20px;
 
         p {
             font-weight: 400;
@@ -28,20 +26,6 @@
 
             @media(max-width: 767px) {
                 font-size: 26px;
-            }
-        }
-
-        .p-header {
-            padding: 20px;
-
-            p {
-                font-weight: 400;
-                font-size: 18px;
-
-                @media(max-width: 767px) {
-                    padding: 0px 10px 20px;
-                    font-size: 15px;
-                }
             }
         }
     }

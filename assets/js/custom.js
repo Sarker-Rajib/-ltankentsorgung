@@ -1,24 +1,17 @@
-// image slide
-var slideIndex = 1;
-showDivs(slideIndex);
+const miniTrigger = document.getElementById('mini-trigger');
+const expTrigger = document.getElementById('expp-trigger');
+const miniSection = document.getElementById('mini');
+const expandedSection = document.getElementById('expanded');
 
-function plusDivs(n) {
-    showDivs(slideIndex += n);
-}
+miniTrigger.addEventListener('click', () => {
+    miniSection.classList.add('d-none');
+    expandedSection.classList.remove('d-none');
+});
 
-function showDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    if (n > x.length) { slideIndex = 1 }
-    if (n < 1) { slideIndex = x.length }
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-    }
-    x[slideIndex - 1].style.display = "block";
-}
-
-// --
-
+expTrigger.addEventListener('click', () => {
+    miniSection.classList.remove('d-none');
+    expandedSection.classList.add('d-none');
+});
 
 // form file add
 const addButton = document.getElementById('addMoreFile');
@@ -28,7 +21,6 @@ addButton.addEventListener('click', () => {
 
     const child = document.createElement('input')
     child.type = 'file'
-    child.name = 'name1'
     child.classList.add('form-control')
     child.classList.add('file-input')
     filesParent.appendChild(child);
